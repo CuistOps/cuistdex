@@ -13,9 +13,9 @@
   <main class="shell">
     <header class="topbar">
       <a class="brand" href="#top" aria-label="CuistDex, accueil"><span class="brand-pan">C</span><span>Cuist<span>Dex</span></span></a>
-      <nav id="mainNav" aria-label="Navigation principale"><a class="active" href="#catalogue">Explorer</a><a href="#laboratoire">Le labo</a><a href="#classements">Classements</a></nav>
+      <nav id="mainNav" aria-label="Navigation principale" onclick="this.closest('.topbar').classList.remove('menu-open');document.querySelector('.menu').setAttribute('aria-expanded','false')"><a class="active" href="#catalogue">Explorer</a><a href="#laboratoire">Le labo</a><a href="#classements">Classements</a></nav>
       <a class="github" href="https://github.com/CuistOps/cuistdex/issues/new/choose" target="_blank" rel="noreferrer"><span>+</span> Contribuer</a>
-      <button class="menu" type="button" aria-label="Ouvrir le menu" aria-controls="mainNav" aria-expanded="false">Menu</button>
+      <button class="menu" type="button" aria-label="Ouvrir le menu" aria-controls="mainNav" aria-expanded="false" onclick="const open=this.closest('.topbar').classList.toggle('menu-open');this.setAttribute('aria-expanded',String(open))">Menu</button>
     </header>
 
     <section class="hero" id="top">
