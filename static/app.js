@@ -26,8 +26,13 @@ filters.forEach((filter) => filter.addEventListener('click', () => {
 
 search.addEventListener('input', updateCatalogue);
 
+let sortAscending = false;
+
 document.querySelector('#sortButton').addEventListener('click', (event) => {
   const grid = document.querySelector('#techGrid');
-  [...cards].reverse().forEach((card) => grid.append(card));
-  event.currentTarget.innerHTML = 'Trier : ordre inverse <b>v</b>';
+  sortAscending = !sortAscending;
+  [...cards]
+    .sort((a, b) => a.dataset.name.localeCompare(b.dataset.name) * (sortAscending ? 1 : -1))
+    .forEach((card) => grid.append(card));
+  event.currentTarget.innerHTML = `Trier : ${sortAscending ? 'A-Z' : 'Z-A'} <b>v</b>`;
 });
