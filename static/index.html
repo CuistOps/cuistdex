@@ -7,14 +7,15 @@
   <title>CuistDex - Les technologies passees a la casserole</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2310171d'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='18' font-family='serif' fill='%23f26433'%3EC%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
+  <style>@media(max-width:860px){.topbar{position:relative}.topbar.menu-open nav{display:flex;position:absolute;top:65px;left:0;right:0;z-index:2;padding:18px 6%;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.topbar.menu-open nav a.active:after{display:none}}</style>
 </head>
 <body>
   <main class="shell">
     <header class="topbar">
       <a class="brand" href="#top" aria-label="CuistDex, accueil"><span class="brand-pan">C</span><span>Cuist<span>Dex</span></span></a>
-      <nav aria-label="Navigation principale"><a class="active" href="#catalogue">Explorer</a><a href="#laboratoire">Le labo</a><a href="#classements">Classements</a></nav>
-      <a class="github" href="#contribuer"><span>+</span> Contribuer</a>
-      <button class="menu" aria-label="Ouvrir le menu">Menu</button>
+      <nav id="mainNav" aria-label="Navigation principale"><a class="active" href="#catalogue">Explorer</a><a href="#laboratoire">Le labo</a><a href="#classements">Classements</a></nav>
+      <a class="github" href="https://github.com/CuistOps/cuistdex/issues/new/choose" target="_blank" rel="noreferrer"><span>+</span> Contribuer</a>
+      <button class="menu" type="button" aria-label="Ouvrir le menu" aria-controls="mainNav" aria-expanded="false">Menu</button>
     </header>
 
     <section class="hero" id="top">
@@ -83,7 +84,7 @@
     </section>
 
     <section class="feature-area" id="laboratoire">
-      <article class="dish">
+      <article class="dish" id="recette">
         <div class="dish-meta"><p class="eyebrow">A la une du labo</p><span>RECETTE #012</span></div>
         <h2>Kubernetes as a Service<br>sur <em>micro-VMs</em></h2>
         <p>Une recette ambitieuse ou Virtink, Kamaji et Talos travaillent ensemble pour servir des clusters a la demande.</p>
@@ -92,7 +93,7 @@
         <div class="pan-art" aria-hidden="true"><div class="steam s1"></div><div class="steam s2"></div><div class="steam s3"></div><div class="pan"><div></div></div></div>
       </article>
       <article class="ranking" id="classements">
-        <div class="ranking-head"><div><p class="eyebrow">Tableau d'honneur</p><h2>Les favoris du public</h2></div><a href="#tout">Tout le classement -></a></div>
+        <div class="ranking-head"><div><p class="eyebrow">Tableau d'honneur</p><h2>Les favoris du public</h2></div><a href="#catalogue">Tout le classement -></a></div>
         <ol>
           <li><span>01</span><div class="mini-logo talos">TL</div><b>Talos Linux</b><em>8.8 <small>/ 10</small></em><div class="bar"><i style="width:88%"></i></div></li>
           <li><span>02</span><div class="mini-logo kube">KV</div><b>KubeVirt</b><em>8.4 <small>/ 10</small></em><div class="bar"><i style="width:84%"></i></div></li>
@@ -102,7 +103,7 @@
       </article>
     </section>
 
-    <section class="manifesto" id="contribuer"><div><p class="eyebrow">Une communautaire, pas une vitrine</p><h2>Un avis merite<br>d'etre <em>versionne.</em></h2></div><p>Chaque note, critique et commentaire rejoint le CuistDex via une Pull Request. Pas de base de donnees cachee : juste des retours qui peuvent evoluer avec vos pratiques.</p><a href="#github" class="button-dark">Donner mon avis <b>-></b></a></section>
+    <section class="manifesto" id="contribuer"><div><p class="eyebrow">Une communautaire, pas une vitrine</p><h2>Un avis merite<br>d'etre <em>versionne.</em></h2></div><p>Chaque note, critique et commentaire rejoint le CuistDex via une Pull Request. Pas de base de donnees cachee : juste des retours qui peuvent evoluer avec vos pratiques.</p><a href="https://github.com/CuistOps/cuistdex/issues/new/choose" class="button-dark" target="_blank" rel="noreferrer">Donner mon avis <b>-></b></a></section>
     <footer><a class="brand" href="#top"><span class="brand-pan">C</span><span>Cuist<span>Dex</span></span></a><span>Fait avec curiosite par <b>CuistOps</b></span><span>Les avis sont servis sans garantie.</span></footer>
   </main>
   <script src="app.js"></script>

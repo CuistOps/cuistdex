@@ -2,6 +2,8 @@ const filters = document.querySelectorAll('.filter');
 const cards = document.querySelectorAll('.tech-card');
 const search = document.querySelector('#search');
 const empty = document.querySelector('#empty');
+const menu = document.querySelector('.menu');
+const topbar = document.querySelector('.topbar');
 let category = 'all';
 
 function updateCatalogue() {
@@ -31,3 +33,13 @@ document.querySelector('#sortButton').addEventListener('click', (event) => {
   [...cards].reverse().forEach((card) => grid.append(card));
   event.currentTarget.innerHTML = 'Trier : ordre inverse <b>v</b>';
 });
+
+menu.addEventListener('click', () => {
+  const open = topbar.classList.toggle('menu-open');
+  menu.setAttribute('aria-expanded', String(open));
+});
+
+document.querySelectorAll('#mainNav a').forEach((link) => link.addEventListener('click', () => {
+  topbar.classList.remove('menu-open');
+  menu.setAttribute('aria-expanded', 'false');
+}));
