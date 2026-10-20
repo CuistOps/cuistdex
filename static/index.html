@@ -7,7 +7,7 @@
   <title>CuistDex - Les technologies passees a la casserole</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2310171d'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='18' font-family='serif' fill='%23f26433'%3EC%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
-  <style>@media(max-width:860px){.topbar{position:relative}.topbar.menu-open nav{display:flex!important;position:absolute;top:65px;left:0;right:0;z-index:2;padding:18px 6%;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.topbar.menu-open nav a.active:after{display:none}}</style>
+  <style>.spark{background:#f7e2c4;color:#bd672b}@media(max-width:860px){.topbar{position:relative}.topbar.menu-open nav{display:flex!important;position:absolute;top:65px;left:0;right:0;z-index:2;padding:18px 6%;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.topbar.menu-open nav a.active:after{display:none}}</style>
 </head>
 <body>
   <main class="shell">
@@ -46,12 +46,12 @@
         <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Rechercher une techno..." aria-label="Rechercher une technologie"></label>
       </div>
       <div class="filter-row" role="group" aria-label="Filtrer par categorie">
-        <button class="filter active" data-category="all">Tout voir <span>38</span></button>
-        <button class="filter" data-category="kubernetes">Kubernetes <span>12</span></button>
-        <button class="filter" data-category="gitops">GitOps & CI/CD <span>8</span></button>
-        <button class="filter" data-category="virtualisation">Virtualisation <span>6</span></button>
-        <button class="filter" data-category="securite">Securite <span>5</span></button>
-        <button class="filter" data-category="data">Data & IA <span>4</span></button>
+        <button class="filter active" data-category="all">Tout voir <span>5</span></button>
+        <button class="filter" data-category="kubernetes">Kubernetes <span>3</span></button>
+        <button class="filter" data-category="gitops">GitOps & CI/CD <span>1</span></button>
+        <button class="filter" data-category="virtualisation">Virtualisation <span>1</span></button>
+        <button class="filter" data-category="securite">Securite <span>1</span></button>
+        <button class="filter" data-category="data">Data & IA <span>1</span></button>
       </div>
       <div class="catalogue-head"><span>Dernieres degustations</span><button id="sortButton">Trier : A-Z <b>v</b></button></div>
       <div class="tech-grid" id="techGrid">
@@ -59,25 +59,31 @@
           <div class="card-top"><span class="number">#007</span><span class="status tested">Teste en live</span></div>
           <div class="tech-mark kube">KV</div>
           <div class="card-title"><div><h3>KubeVirt</h3><p>Virtualisation · Kubernetes</p></div><span class="open">-></span></div>
-          <div class="ratings"><span><i>Q</i> <b>8.5</b></span><span><i>J</i> <b>9.0</b></span><span class="public">Pop. <b>8.4</b></span></div>
+          <div class="ratings"><span><i>Q</i> <b>4.25</b></span><span><i>J</i> <b>4.5</b></span><span class="public">Pop. <b>4.2/5</b></span></div>
         </article>
         <article class="tech-card" data-category="kubernetes" data-name="Talos Linux Kubernetes OS">
           <div class="card-top"><span class="number">#014</span><span class="status">En cuisine</span></div>
           <div class="tech-mark talos">TL</div>
           <div class="card-title"><div><h3>Talos Linux</h3><p>Kubernetes · OS</p></div><span class="open">-></span></div>
-          <div class="ratings"><span><i>Q</i> <b>9.0</b></span><span><i>J</i> <b>9.0</b></span><span class="public">Pop. <b>8.8</b></span></div>
+          <div class="ratings"><span><i>Q</i> <b>4.5</b></span><span><i>J</i> <b>4.5</b></span><span class="public">Pop. <b>4.4/5</b></span></div>
         </article>
         <article class="tech-card" data-category="gitops" data-name="Kargo GitOps delivery CD">
           <div class="card-top"><span class="number">#021</span><span class="status tested">Teste en live</span></div>
           <div class="tech-mark kargo">KG</div>
           <div class="card-title"><div><h3>Kargo</h3><p>GitOps · Delivery</p></div><span class="open">-></span></div>
-          <div class="ratings"><span><i>Q</i> <b>8.0</b></span><span><i>J</i> <b>7.5</b></span><span class="public">Pop. <b>7.9</b></span></div>
+          <div class="ratings"><span><i>Q</i> <b>4.0</b></span><span><i>J</i> <b>3.75</b></span><span class="public">Pop. <b>4.0/5</b></span></div>
         </article>
         <article class="tech-card" data-category="securite kubernetes" data-name="Falco eBPF security securite Kubernetes">
           <div class="card-top"><span class="number">#019</span><span class="status">Decouverte</span></div>
           <div class="tech-mark falco">FL</div>
           <div class="card-title"><div><h3>Falco</h3><p>Securite · eBPF</p></div><span class="open">-></span></div>
-          <div class="ratings"><span><i>Q</i> <b>8.0</b></span><span><i>J</i> <b>8.5</b></span><span class="public">Pop. <b>8.1</b></span></div>
+          <div class="ratings"><span><i>Q</i> <b>4.0</b></span><span><i>J</i> <b>4.25</b></span><span class="public">Pop. <b>4.1/5</b></span></div>
+        </article>
+        <article class="tech-card" data-category="data" data-name="Apache Spark big data analytics data">
+          <div class="card-top"><span class="number">#026</span><span class="status tested">Teste en live</span></div>
+          <div class="tech-mark spark">SP</div>
+          <div class="card-title"><div><h3>Apache Spark</h3><p>Data · Analytics</p></div><span class="open">-></span></div>
+          <div class="ratings"><span><i>Q</i> <b>3.5</b></span><span><i>J</i> <b>3.75</b></span><span class="public">Pop. <b>3.7/5</b></span></div>
         </article>
       </div>
       <p id="empty" class="empty" hidden>Aucune technologie ne correspond a cette recherche.</p>
@@ -95,10 +101,10 @@
       <article class="ranking" id="classements">
         <div class="ranking-head"><div><p class="eyebrow">Tableau d'honneur</p><h2>Les favoris du public</h2></div><a href="#catalogue">Tout le classement -></a></div>
         <ol>
-          <li><span>01</span><div class="mini-logo talos">TL</div><b>Talos Linux</b><em>8.8 <small>/ 10</small></em><div class="bar"><i style="width:88%"></i></div></li>
-          <li><span>02</span><div class="mini-logo kube">KV</div><b>KubeVirt</b><em>8.4 <small>/ 10</small></em><div class="bar"><i style="width:84%"></i></div></li>
-          <li><span>03</span><div class="mini-logo falco">FL</div><b>Falco</b><em>8.1 <small>/ 10</small></em><div class="bar"><i style="width:81%"></i></div></li>
-          <li><span>04</span><div class="mini-logo kargo">KG</div><b>Kargo</b><em>7.9 <small>/ 10</small></em><div class="bar"><i style="width:79%"></i></div></li>
+          <li><span>01</span><div class="mini-logo talos">TL</div><b>Talos Linux</b><em>4.4 <small>/ 5</small></em><div class="bar"><i style="width:88%"></i></div></li>
+          <li><span>02</span><div class="mini-logo kube">KV</div><b>KubeVirt</b><em>4.2 <small>/ 5</small></em><div class="bar"><i style="width:84%"></i></div></li>
+          <li><span>03</span><div class="mini-logo falco">FL</div><b>Falco</b><em>4.1 <small>/ 5</small></em><div class="bar"><i style="width:81%"></i></div></li>
+          <li><span>04</span><div class="mini-logo kargo">KG</div><b>Kargo</b><em>4.0 <small>/ 5</small></em><div class="bar"><i style="width:79%"></i></div></li>
         </ol>
       </article>
     </section>
