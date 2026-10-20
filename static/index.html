@@ -46,11 +46,11 @@
         <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Rechercher une techno..." aria-label="Rechercher une technologie"></label>
       </div>
       <div class="filter-row" role="group" aria-label="Filtrer par categorie">
-        <button class="filter active" data-category="all">Tout voir <span>5</span></button>
-        <button class="filter" data-category="kubernetes">Kubernetes <span>3</span></button>
+        <button class="filter active" data-category="all">Tout voir <span>9</span></button>
+        <button class="filter" data-category="kubernetes">Kubernetes <span>5</span></button>
         <button class="filter" data-category="gitops">GitOps & CI/CD <span>1</span></button>
         <button class="filter" data-category="virtualisation">Virtualisation <span>1</span></button>
-        <button class="filter" data-category="securite">Securite <span>1</span></button>
+        <button class="filter" data-category="securite">Securite <span>3</span></button>
         <button class="filter" data-category="data">Data & IA <span>1</span></button>
       </div>
       <div class="catalogue-head"><span>Dernieres degustations</span><button id="sortButton">Trier : A-Z <b>v</b></button></div>
@@ -85,6 +85,10 @@
           <div class="card-title"><div><h3>Apache Spark</h3><p>Data · Analytics</p></div><a class="open" href="technologies/spark/" aria-label="Voir la fiche Apache Spark">-></a></div>
           <div class="ratings"><span><i>Q</i> <b>3.5</b></span><span><i>J</i> <b>3.75</b></span><span class="public">Pop. <b>3.7/5</b></span></div>
         </article>
+        <article class="tech-card" data-category="gitops" data-name="Pulumi infrastructure IaC" data-url="technologies/pulumi/" role="link" tabindex="0" onclick="if(!event.target.closest('a'))location.assign(this.dataset.url)"><div class="card-top"><span class="number">#028</span><span class="status">A noter</span></div><div class="tech-mark spark">PU</div><div class="card-title"><div><h3>Pulumi</h3><p>Infrastructure · IaC</p></div><a class="open" href="technologies/pulumi/">-></a></div><div class="ratings"><span>Replay source</span><span class="public">Notes a publier</span></div></article>
+        <article class="tech-card" data-category="kubernetes" data-name="Omni Kubernetes platform" data-url="technologies/omni/" role="link" tabindex="0" onclick="if(!event.target.closest('a'))location.assign(this.dataset.url)"><div class="card-top"><span class="number">#029</span><span class="status">A noter</span></div><div class="tech-mark talos">OM</div><div class="card-title"><div><h3>Omni</h3><p>Kubernetes · Platform</p></div><a class="open" href="technologies/omni/">-></a></div><div class="ratings"><span>Replay source</span><span class="public">Notes a publier</span></div></article>
+        <article class="tech-card" data-category="kubernetes securite" data-name="Cilium network security eBPF" data-url="technologies/cilium/" role="link" tabindex="0" onclick="if(!event.target.closest('a'))location.assign(this.dataset.url)"><div class="card-top"><span class="number">#030</span><span class="status">A noter</span></div><div class="tech-mark kube">CI</div><div class="card-title"><div><h3>Cilium</h3><p>Network · Security</p></div><a class="open" href="technologies/cilium/">-></a></div><div class="ratings"><span>Replay source</span><span class="public">Notes a publier</span></div></article>
+        <article class="tech-card" data-category="securite" data-name="Kyverno security policy Kubernetes" data-url="technologies/kyverno/" role="link" tabindex="0" onclick="if(!event.target.closest('a'))location.assign(this.dataset.url)"><div class="card-top"><span class="number">#031</span><span class="status">A noter</span></div><div class="tech-mark falco">KY</div><div class="card-title"><div><h3>Kyverno</h3><p>Security · Policy</p></div><a class="open" href="technologies/kyverno/">-></a></div><div class="ratings"><span>Replay source</span><span class="public">Notes a publier</span></div></article>
       </div>
       <p id="empty" class="empty" hidden>Aucune technologie ne correspond a cette recherche.</p>
     </section>
