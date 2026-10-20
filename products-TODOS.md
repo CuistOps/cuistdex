@@ -39,6 +39,24 @@ Inventaire initialise le 2026-10-20 a partir de sources publiques. Une entree de
 - [x] Backstage - GitHub : backstage-app, backstage-iac.
 - [x] Terraform - GitHub : terraform-talos.
 
+## Newly Discovered On YouTube
+
+Verification directe de la page Videos de `Une tasse de cafe` le 2026-10-20 : 40 videos publiees. Les titres suivants citent explicitement des produits absents du catalogue.
+
+- [ ] OpenClaw - titres : OpenClaw + OLLama, Tentative de mettre OpenClaw avec OLLama.
+- [ ] Ollama - titres : OpenClaw + OLLama, Tentative de mettre OpenClaw avec OLLama.
+- [ ] Qwen - titre : Qwen 45b A3b + OpenClaw + ClusterAPI.
+- [ ] Cluster API - titres : Qwen + ClusterAPI, VirtInk + ClusterAPI, Autoscaling sur CAPI.
+- [ ] VirtInk - titre : Un cluster en MicroVM avec VirtInk et ClusterAPI.
+- [ ] Velero - titre : Decouverte de Velero.
+- [ ] BootC - titre : Un Dockerfile pour installer une machine ? - BootC.
+- [ ] PVMSS - titre : Prise en main de PVMSS + Kamaji x Talos.
+- [ ] Kamaji - titres : PVMSS + Kamaji x Talos, ControlPlanes Talos manages avec Kamaji.
+- [ ] KubeVela - titre : Kubevela et l'OAM.
+- [ ] OAM - titre : Kubevela et l'OAM.
+- [ ] OLM - titre : Decouverte de OLM (/ GlassKube).
+- [ ] GlassKube - titre : Decouverte de OLM (/ GlassKube).
+
 ## Needs Verification
 
 - [ ] AX - Twitch : Decouverte d'AX. Identifier le projet et le replay definitif avant publication.
