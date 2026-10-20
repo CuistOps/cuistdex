@@ -10,7 +10,11 @@ Object.assign(technologies, {
   pulumi:generic('Pulumi','PU','#028','Infrastructure · IaC','Pulumi est un outil d’infrastructure as code explore par CuistOps dans un replay dedie.',['IaC','Cloud','Programming']),
   omni:generic('Omni','OM','#029','Kubernetes · Platform','Omni est une plateforme de gestion de clusters Kubernetes abordee par CuistOps.',['Kubernetes','Platform','Talos']),
   cilium:generic('Cilium','CI','#030','Network · Security','Cilium et son mode Cluster Mesh ont fait l’objet d’une emission CuistOps.',['Network','eBPF','Kubernetes']),
-  kyverno:generic('Kyverno','KY','#031','Security · Policy','Kyverno est un moteur de politiques Kubernetes decouvert pendant un replay CuistOps.',['Policy','Security','Kubernetes'])
+  kyverno:generic('Kyverno','KY','#031','Security · Policy','Kyverno est un moteur de politiques Kubernetes decouvert pendant un replay CuistOps.',['Policy','Security','Kubernetes']),
+  argocd:generic('Argo CD','AR','#032','GitOps · CD','Argo CD a ete presente par CuistOps dans un replay dedie au GitOps sur Kubernetes.',['GitOps','CD','Kubernetes']),
+  fluxcd:generic('Flux CD','FX','#033','GitOps · CD','Flux CD est documente dans les depots CuistOps et fait partie du backlog de replays a relier.',['GitOps','CD','Kubernetes']),
+  tekton:generic('Tekton','TK','#034','CI/CD · Kubernetes','Tekton est un moteur de pipelines cloud-native disponible dans le depot tekton-live de CuistOps.',['CI/CD','Pipelines','Kubernetes']),
+  dapr:generic('Dapr','DP','#035','Developer · Microservices','Dapr a ete aborde dans un replay CuistOps sur Kubernetes pour les developpeurs.',['Microservices','Developer','Kubernetes'])
 });
 const technology = technologies[document.body.dataset.tech];
 if (!technology) location.replace('../../');

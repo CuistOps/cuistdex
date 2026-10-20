@@ -26,13 +26,13 @@ Inventaire initialise le 2026-10-20 a partir de sources publiques. Une entree de
 - [ ] Cilium - YouTube : Cilium Cluster Mesh avec @jligier.
 - [ ] Tetragon - YouTube : Decouverte de Cilium Tetragon et comparaison avec Falco.
 - [ ] Kyverno - YouTube : Decouverte de Kyverno.
-- [ ] Argo CD - YouTube : du GitOps sur Kubernetes avec ArgoCD.
-- [ ] Flux CD - GitHub : fluxcd.
-- [ ] Tekton - GitHub : tekton-live.
+- [x] Argo CD - YouTube : du GitOps sur Kubernetes avec ArgoCD.
+- [x] Flux CD - GitHub : fluxcd.
+- [x] Tekton - GitHub : tekton-live.
 - [ ] Harvester - YouTube : Harvester + Rancher, The final episode.
 - [ ] Rancher - YouTube : Harvester + Rancher, The final episode.
 - [ ] OpenBao - YouTube : OpenBao sur Kube.
-- [ ] Dapr - YouTube : Kubernetes pour les devs avec DAPR.
+- [x] Dapr - YouTube : Kubernetes pour les devs avec DAPR.
 - [ ] Firecracker - YouTube : Des MicroVMs avec Firecracker.
 - [ ] Quickwit - YouTube : Quickwit, le potentiel remplacant de Loki/ELK.
 - [ ] NATS - GitHub : NATS-Transfer-messages.
