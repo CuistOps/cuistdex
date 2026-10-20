@@ -23,10 +23,15 @@ Object.assign(technologies, {
   rancher:generic('Rancher','RA','#041','Kubernetes · Platform','Rancher a ete aborde avec Harvester dans un replay CuistOps.',['Kubernetes','Platform','Management']),
   nats:generic('NATS','NT','#042','Messaging · Cloud-native','NATS est represente dans le depot NATS-Transfer-messages de CuistOps.',['Messaging','Cloud-native','Eventing']),
   backstage:generic('Backstage','BS','#043','Developer · Platform','Backstage est documente par les depots backstage-app et backstage-iac de CuistOps.',['Developer','Platform','Portal']),
-  terraform:generic('Terraform','TF','#044','Infrastructure · IaC','Terraform est documente par les exemples Talos de CuistOps.',['IaC','Infrastructure','Cloud'])
+  terraform:generic('Terraform','TF','#044','Infrastructure · IaC','Terraform est documente par les exemples Talos de CuistOps.',['IaC','Infrastructure','Cloud']),
+  openclaw:generic('OpenClaw','OC','#045','AI · Platform','OpenClaw est explicitement present dans plusieurs replays CuistOps.',['AI','Platform']),ollama:generic('Ollama','OL','#046','AI · Runtime','Ollama est explicitement present dans plusieurs replays CuistOps.',['AI','Runtime']),qwen:generic('Qwen','QW','#047','AI · Model','Qwen 45B A3B est cite dans un replay CuistOps.',['AI','Model']),clusterapi:generic('Cluster API','CA','#048','Kubernetes · Automation','Cluster API est cite dans plusieurs replays CuistOps.',['Kubernetes','Automation']),virtink:generic('VirtInk','VI','#049','Virtualisation · MicroVM','VirtInk est cite dans un replay sur les microVMs.',['Virtualisation','MicroVM']),velero:generic('Velero','VE','#050','Backup · Kubernetes','Velero fait l’objet d’un replay dedie.',['Backup','Kubernetes']),bootc:generic('BootC','BC','#051','OS · Images','BootC est cite dans un replay dedie.',['OS','Images']),pvmss:generic('PVMSS','PV','#052','Infrastructure · Platform','PVMSS est cite avec Kamaji et Talos.',['Infrastructure','Platform']),kamaji:generic('Kamaji','KM','#053','Kubernetes · Control plane','Kamaji est cite dans plusieurs replays CuistOps.',['Kubernetes','Control plane']),kubevela:generic('KubeVela','KV','#054','Platform · OAM','KubeVela et OAM font l’objet d’un replay.',['Platform','OAM']),oam:generic('OAM','OA','#055','Platform · Specification','OAM est cite avec KubeVela.',['Platform','Specification']),olm:generic('OLM','OL','#056','Kubernetes · Operators','OLM est cite avec GlassKube.',['Kubernetes','Operators']),glasskube:generic('GlassKube','GK','#057','Kubernetes · Packages','GlassKube est cite dans un replay dedie.',['Kubernetes','Packages'])
 });
 const technology = technologies[document.body.dataset.tech];
 if (!technology) location.replace('../../');
+if (!document.querySelector('.page')) {
+  document.head.insertAdjacentHTML('beforeend', '<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../../tech.css">');
+  document.body.innerHTML = '<div class="page"><header class="top"><a class="brand" href="../../"><span class="mark">C</span>Cuist<b>Dex</b></a><a class="back" href="../../"><b><-</b> Retour au catalogue</a></header><div id="app"></div></div>';
+}
 document.title = `${technology.name} - CuistDex`;
 document.documentElement.style.setProperty('--tint', technology.tint);
 document.documentElement.style.setProperty('--tone', technology.tone);
