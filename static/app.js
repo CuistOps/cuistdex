@@ -36,3 +36,16 @@ document.querySelector('#sortButton').addEventListener('click', (event) => {
     .forEach((card) => grid.append(card));
   event.currentTarget.innerHTML = `Trier : ${sortAscending ? 'A-Z' : 'Z-A'} <b>v</b>`;
 });
+
+cards.forEach((card) => {
+  const open = () => { location.href = card.dataset.url; };
+  card.addEventListener('click', (event) => {
+    if (!event.target.closest('a')) open();
+  });
+  card.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      open();
+    }
+  });
+});
