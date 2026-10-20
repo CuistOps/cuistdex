@@ -29,15 +29,15 @@ Inventaire initialise le 2026-10-20 a partir de sources publiques. Une entree de
 - [x] Argo CD - YouTube : du GitOps sur Kubernetes avec ArgoCD.
 - [x] Flux CD - GitHub : fluxcd.
 - [x] Tekton - GitHub : tekton-live.
-- [ ] Harvester - YouTube : Harvester + Rancher, The final episode.
-- [ ] Rancher - YouTube : Harvester + Rancher, The final episode.
+- [x] Harvester - YouTube : Harvester + Rancher, The final episode.
+- [x] Rancher - YouTube : Harvester + Rancher, The final episode.
 - [x] OpenBao - YouTube : OpenBao sur Kube.
 - [x] Dapr - YouTube : Kubernetes pour les devs avec DAPR.
 - [x] Firecracker - YouTube : Des MicroVMs avec Firecracker.
 - [x] Quickwit - YouTube : Quickwit, le potentiel remplacant de Loki/ELK.
-- [ ] NATS - GitHub : NATS-Transfer-messages.
-- [ ] Backstage - GitHub : backstage-app, backstage-iac.
-- [ ] Terraform - GitHub : terraform-talos.
+- [x] NATS - GitHub : NATS-Transfer-messages.
+- [x] Backstage - GitHub : backstage-app, backstage-iac.
+- [x] Terraform - GitHub : terraform-talos.
 
 ## Needs Verification
 

@@ -18,7 +18,12 @@ Object.assign(technologies, {
   tetragon:generic('Tetragon','TG','#036','Security · eBPF','Cilium Tetragon a ete compare a Falco dans un replay CuistOps.',['Security','eBPF','Runtime']),
   openbao:generic('OpenBao','OB','#037','Security · Secrets','OpenBao a ete presente dans un replay CuistOps sur Kubernetes.',['Secrets','Security','Kubernetes']),
   firecracker:generic('Firecracker','FC','#038','Virtualisation · MicroVM','Firecracker et les microVMs ont fait l’objet d’une emission CuistOps.',['MicroVM','Virtualisation','Security']),
-  quickwit:generic('Quickwit','QW','#039','Observability · Data','Quickwit a ete explore comme alternative potentielle a Loki et ELK dans un replay CuistOps.',['Observability','Logs','Data'])
+  quickwit:generic('Quickwit','QW','#039','Observability · Data','Quickwit a ete explore comme alternative potentielle a Loki et ELK dans un replay CuistOps.',['Observability','Logs','Data']),
+  harvester:generic('Harvester','HV','#040','Virtualisation · Kubernetes','Harvester a ete aborde avec Rancher dans un replay CuistOps.',['Virtualisation','Kubernetes','HCI']),
+  rancher:generic('Rancher','RA','#041','Kubernetes · Platform','Rancher a ete aborde avec Harvester dans un replay CuistOps.',['Kubernetes','Platform','Management']),
+  nats:generic('NATS','NT','#042','Messaging · Cloud-native','NATS est represente dans le depot NATS-Transfer-messages de CuistOps.',['Messaging','Cloud-native','Eventing']),
+  backstage:generic('Backstage','BS','#043','Developer · Platform','Backstage est documente par les depots backstage-app et backstage-iac de CuistOps.',['Developer','Platform','Portal']),
+  terraform:generic('Terraform','TF','#044','Infrastructure · IaC','Terraform est documente par les exemples Talos de CuistOps.',['IaC','Infrastructure','Cloud'])
 });
 const technology = technologies[document.body.dataset.tech];
 if (!technology) location.replace('../../');
