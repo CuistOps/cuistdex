@@ -14,7 +14,11 @@ Object.assign(technologies, {
   argocd:generic('Argo CD','AR','#032','GitOps · CD','Argo CD a ete presente par CuistOps dans un replay dedie au GitOps sur Kubernetes.',['GitOps','CD','Kubernetes']),
   fluxcd:generic('Flux CD','FX','#033','GitOps · CD','Flux CD est documente dans les depots CuistOps et fait partie du backlog de replays a relier.',['GitOps','CD','Kubernetes']),
   tekton:generic('Tekton','TK','#034','CI/CD · Kubernetes','Tekton est un moteur de pipelines cloud-native disponible dans le depot tekton-live de CuistOps.',['CI/CD','Pipelines','Kubernetes']),
-  dapr:generic('Dapr','DP','#035','Developer · Microservices','Dapr a ete aborde dans un replay CuistOps sur Kubernetes pour les developpeurs.',['Microservices','Developer','Kubernetes'])
+  dapr:generic('Dapr','DP','#035','Developer · Microservices','Dapr a ete aborde dans un replay CuistOps sur Kubernetes pour les developpeurs.',['Microservices','Developer','Kubernetes']),
+  tetragon:generic('Tetragon','TG','#036','Security · eBPF','Cilium Tetragon a ete compare a Falco dans un replay CuistOps.',['Security','eBPF','Runtime']),
+  openbao:generic('OpenBao','OB','#037','Security · Secrets','OpenBao a ete presente dans un replay CuistOps sur Kubernetes.',['Secrets','Security','Kubernetes']),
+  firecracker:generic('Firecracker','FC','#038','Virtualisation · MicroVM','Firecracker et les microVMs ont fait l’objet d’une emission CuistOps.',['MicroVM','Virtualisation','Security']),
+  quickwit:generic('Quickwit','QW','#039','Observability · Data','Quickwit a ete explore comme alternative potentielle a Loki et ELK dans un replay CuistOps.',['Observability','Logs','Data'])
 });
 const technology = technologies[document.body.dataset.tech];
 if (!technology) location.replace('../../');

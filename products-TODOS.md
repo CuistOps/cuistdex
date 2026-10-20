@@ -24,17 +24,17 @@ Inventaire initialise le 2026-10-20 a partir de sources publiques. Une entree de
 - [ ] Pulumi - YouTube : On decouvre Pulumi.
 - [ ] Omni - YouTube : Prise en main de Omni et decouverte de l'API Gateway.
 - [ ] Cilium - YouTube : Cilium Cluster Mesh avec @jligier.
-- [ ] Tetragon - YouTube : Decouverte de Cilium Tetragon et comparaison avec Falco.
+- [x] Tetragon - YouTube : Decouverte de Cilium Tetragon et comparaison avec Falco.
 - [ ] Kyverno - YouTube : Decouverte de Kyverno.
 - [x] Argo CD - YouTube : du GitOps sur Kubernetes avec ArgoCD.
 - [x] Flux CD - GitHub : fluxcd.
 - [x] Tekton - GitHub : tekton-live.
 - [ ] Harvester - YouTube : Harvester + Rancher, The final episode.
 - [ ] Rancher - YouTube : Harvester + Rancher, The final episode.
-- [ ] OpenBao - YouTube : OpenBao sur Kube.
+- [x] OpenBao - YouTube : OpenBao sur Kube.
 - [x] Dapr - YouTube : Kubernetes pour les devs avec DAPR.
-- [ ] Firecracker - YouTube : Des MicroVMs avec Firecracker.
-- [ ] Quickwit - YouTube : Quickwit, le potentiel remplacant de Loki/ELK.
+- [x] Firecracker - YouTube : Des MicroVMs avec Firecracker.
+- [x] Quickwit - YouTube : Quickwit, le potentiel remplacant de Loki/ELK.
 - [ ] NATS - GitHub : NATS-Transfer-messages.
 - [ ] Backstage - GitHub : backstage-app, backstage-iac.
 - [ ] Terraform - GitHub : terraform-talos.
